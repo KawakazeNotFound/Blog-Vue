@@ -14,5 +14,8 @@
     "vuepress": "2.0.0-beta.63",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-theme-reco": "2.0.0-beta.66"
+  },
+  "devDependencies": {
+    "vuepress-plugin-meting": "^0.3.3"
   }
 }
