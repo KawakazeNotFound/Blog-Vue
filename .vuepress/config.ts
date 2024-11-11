@@ -20,7 +20,7 @@ export default defineUserConfig({
     //END
     style: "@vuepress-reco/style-default",
      primaryColor: '#93B5E3',
-    logo: "/logo.png",
+    logo: "/navLogo.svg",
     author: "Kawakaze",
     authorAvatar: "/avatar.jpg",
     lastUpdatedText: "最近更新",
@@ -42,29 +42,36 @@ export default defineUserConfig({
     },
     
     plugins: [
-      [
-        '@vuepress-reco/vuepress-plugin-bgm-player',
-        {
-          audios: [
+
+    //音乐播放器
+    ['@vuepress-reco/vuepress-plugin-bgm-player',
+      {
+        audios: [
             {
-              name: '友情と勇気と光の口マン',
-              artist: 'sᴘᴇᴄɪ-ᴀʟʟʏ;',
-              url: '/assets/audio/1.mp3',
-              cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
+                name: '강남역 4번 출구',
+                artist: 'Plastic / Fallin` Dild',
+                url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+            },
+            {
+                name: '用胳膊当枕头',
+                artist: '최낙타',
+                url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
             }
-          ] ,
-          // 是否自动播放
-          autoplay: true,
-          // 是否默认缩小
-          autoShrink: true ,
-          // 缩小时缩为哪种模式
-          shrinkMode: 'float',
-          // 播放器位置
-          floatPosition: 'right',
-          // 悬浮窗样式
-          //floatStyle:{ bottom: '10px', 'z-index': '999999' }
+        ],
+        position: {
+            left: '10px',
+            bottom: '10px',
+            'z-index': '999999'
+        },
+        autoShrink: true,
+        floatPosition: 'left',
+        floatStyle: {
+            bottom: '80px',
+            'z-index': '999999'
         }
-      ]
+     }]
     ]
     
   })
