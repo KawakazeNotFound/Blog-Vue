@@ -6,7 +6,7 @@ tags:
   - Novels
 categories:
   - 小说
-next: /Novels/No.62935209
+next: No.62935209
 prev: false
 ---
 ::: warning

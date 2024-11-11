@@ -7,7 +7,7 @@ tags:
 categories:
   - 小说
 next: false
-prev: /Novels/No.38462760
+prev: No.38462760
 ---
 :::info
 本文为第二人续写。前作串号[No.50107047](https://www.nmbxd1.com/t/50107047)     [本站地址][1]
