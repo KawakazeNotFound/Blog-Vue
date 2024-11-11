@@ -11,7 +11,8 @@ prev: false
 :::info
 本文为第二人续写。前作串号[No.50107047](https://www.nmbxd1.com/t/50107047)     [本站地址][1]
 
-[1]:https://blog.kawakaze.pp.ua/Novel/No.38462760
+[1]:https://blog.kawakaze.pp.ua/blogs/Novels/No.38462760.html
+
 :::
 
 
