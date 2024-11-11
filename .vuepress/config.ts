@@ -45,7 +45,7 @@ export default defineUserConfig({
             {
               name: 'LOSER',
               artist: '米津玄師',
-              url: 'https://www.ytmp3.cn/down/73654.mp',
+              url: 'https://github.com/XokoukioX/Blog-Vue/blob/main/assets/audio/%E5%8F%8B%E6%83%85%E3%81%A8%E5%8B%87%E6%B0%97%E3%81%A8%E5%85%89%E3%81%AE%E5%8F%A3%E3%83%9E%E3%83%B3.mp3',
               cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
             }
           ] ,
