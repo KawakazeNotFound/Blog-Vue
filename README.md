@@ -8,6 +8,6 @@ modules:
 bannerBrand:
   bgImage: '/bg.png'
   # title: latte and cat
-  description: A ship in harbor is safe, but that is not what ships are built for.
+  description: "与 你 的 日 常 , 就 是 奇 迹"
 
 ---
