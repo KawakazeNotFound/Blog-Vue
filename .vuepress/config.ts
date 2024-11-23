@@ -26,7 +26,7 @@ export default defineUserConfig({
     lastUpdatedText: "最近更新",
     navbar: [
       { text: "首页", link: "/", icon: "Home" },
-      //{ text: "分类", link: "/Novels/", icon: "Category" },
+      { text: "笔记", link: "/categories/biji/1/", icon: "Notebook" },
       { text: "小说存档", link: "/categories/xiaoshuo/1/", icon: "Archive" },
       { text: '时间轴', link: '/timeline', icon: 'Time' },
       { text: '留言板', link: '/docs/message-board', icon: 'Chat' },
