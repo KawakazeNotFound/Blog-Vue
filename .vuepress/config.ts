@@ -32,7 +32,7 @@ export default defineUserConfig({
       { text: '留言板', link: '/docs/message-board', icon: 'Chat' },
       //{ text: 'CSDN', link: 'https://blog.csdn.net/qq_52395343?spm=1000.2115.3001.5343', icon:'Blog' },
       { text: 'Github', link: 'https://github.com/XokoukioX', icon:'LogoGithub' },
-      { text: '服务器状态', link: 'https://stats.uptimerobot.com/13PZ5unKJo', icon:'Server'}
+      { text: '服务器状态', link: 'https://status.0061226.xyz', icon:'Server'}
     ],
     commentConfig: {
       type: 'valine',
