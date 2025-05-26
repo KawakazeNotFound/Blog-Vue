@@ -13,32 +13,45 @@ prev: false
 
 1.安装依赖
 
-`sudo apt update sudo apt install -y build-essential curl git libssl-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev`
+```shell
+sudo apt update sudo apt install -y build-essential curl git libssl-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
+```
 
 2.克隆仓库
 
- `git clone https://github.com/pyenv/pyenv.git ~/.pyenv`
+```shell
+ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
 
 3.配置环境变量
 
-`# 添加环境变量
+```shell
+# 添加环境变量
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init --path)"\nfi' >> ~/.bashrc
 
+```
+
 # 重新加载配置
 
-source ~/.bashrc`
+```shell
+source ~/.bashrc
+```
 
 4.测试安装版本
 
-`pyenv install 3.11.5    # 举例安装 Python 3.11.5 `
+```shell
+pyenv install 3.11.5    # 举例安装 Python 3.11.5 
+pyenv install 2.7.18    # 也可以安装老版本
+```
 
-`pyenv install 2.7.18    # 也可以安装老版本`
 
 5.查看安装版本
 
-`pyenv versions`
+```shell
+pyenv versions
+```
 
 # 用法
 
