@@ -9,13 +9,21 @@ categories:
 next: false
 prev: false
 ---
+# Redroid在Ubuntu 22.04上部署的一些笔记
 
-# Redroid在Ubuntu 24.04上部署的一些笔记
+## 启动必要模块 (血泪教训，这东西不是持久的)
+
+或者说，你可以创建一个systemd服务让他开机自动运行，具体教程就不说了
+
+```shell
+sudo modprobe ashmem_linux # 在Ubuntu 22.04测试失败，网上说使用androidboot.use_memfd=1替代即可
+sudo modprobe binder_linux devices=binder,hwbinder,vndbinder
+```
 
 ## * 拉取Docker镜像
 
 ```shell
-docker run -itd --privileged   --pull always   -v ~/android-data:/data   -p 127.0.0.1:5555:5555   --name redroid9   --restart always hub.rat.dev/redroid/redroid:9.0.0-latest   androidboot.redroid_width=1280   androidboot.redroid_height=720   androidboot.redroid_gpu_mode=host androidboot.use_memfd=1
+docker run -itd --privileged   --pull always   -v ~/android9-data:/data   -p 5555:5555   --name redroid9   --restart always hub.rat.dev/redroid/redroid:9.0.0-latest   androidboot.redroid_width=1280   androidboot.redroid_height=720   androidboot.redroid_gpu_mode=host androidboot.use_memfd=1 androidboot.redroid_net_ndns=1 androidboot.redroid_net_dns1=223.5.5.5 androidboot.redroid_net_dns2=8.8.8.8
 ```
 
 在这里我使用了 `hub.rat.dev`加速拉取，有条件的可以去掉
