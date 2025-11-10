@@ -41,8 +41,9 @@ export default defineUserConfig({
       { text: "小说存档", link: "/categories/xiaoshuo/1/", icon: "Archive" },
       { text: '时间轴', link: '/timeline', icon: 'Time' },
       { text: '留言板', link: '/docs/message-board', icon: 'Chat' },
-      { text: 'Github', link: 'https://github.com/XokoukioX', icon: 'LogoGithub' },
-      { text: '服务器状态', link: 'http://onlyforlilac.serv00.net:48662/', icon: 'Server' }
+      //{ text: 'CSDN', link: 'https://blog.csdn.net/', icon:'Blog' },
+      { text: 'Github', link: 'https://github.com/KawakazeNotFound', icon:'LogoGithub' },
+      { text: '服务器状态', link: 'https://status.0061226.xyz', icon:'Server'}
     ],
     commentConfig: {
       type: 'valine',
